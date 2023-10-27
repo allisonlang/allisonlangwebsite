@@ -5,3 +5,16 @@
 .logo {
     max-width: 20%;
 }
+
+.portrait-image {
+    max-width: 250px;
+}
+
+.project-navigation-buttons {
+    list-style: none;
+    text-align: center;
+}
+
+.project-navigation-buttons li {
+    display: inline-block;
+}

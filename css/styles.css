@@ -28,3 +28,7 @@
 .project-navigation-buttons li {
     display: inline-block;
 }
+
+.body-background {
+    background-color:#FFF8DC;
+}

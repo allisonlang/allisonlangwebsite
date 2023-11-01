@@ -27,6 +27,9 @@ Secondary Color (Olive Green): #556B2F;
     max-width: 250px;
 }
 
+.project-image {
+    max-width: 25%;
+}
 .project-navigation-buttons {
     list-style: none;
     text-align: center;
@@ -36,28 +39,44 @@ Secondary Color (Olive Green): #556B2F;
     display: inline-block;
 }
 
-h1{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-size: 3.75em;
-    font-weight: 700;
-    line-height: 1.4;
+/*this is a class right? div.intro overrode h1*/
+
+div.intro {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1;
 }
 
-h2{
+h1 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 1;
+}
+
+h2 {
     font-family: 'Manrope', sans-serif;
     font-size: 30px;
     font-weight: 500;
     color:#556B2F;
 }
 
-h3{
+h3 {
     font-family: 'Manrope', sans-serif;
     font-size: 24px;
     font-weight: 500;
     color:black;
 }
 
-span{
+.project-title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color:black;
+}
+
+span {
     font-family: 'Bricolage Grotesque', sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -67,35 +86,37 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-p{
+p {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
     line-height: 1.4;
     font-style: normal;
 }
 
-header{
+header {
     font-family: 'Manrope', sans-serif;
     font-size: 20px;
     line-height: 1.4;
     font-weight: 300;
 }
 
-ul{
+ul {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
     line-height: 1.4;
     font-weight: 400;
 }
 
-footer{
+footer {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
     line-height: 1.4;
     font-weight: 400;
 }
 
-img {
+  /* gen img responsive sizing */
+
+  img {
     width: 100%;
   }
 
@@ -124,47 +145,47 @@ a:focus {
   /* BUTTONS */
 
 .button {
-    color: #556B2F; /* needed to override the default link color */
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block*/
-    background-color: #d7d1d1;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 10px 20px;
-    border-radius: 4px;
-    border-bottom: 2px solid #d7d1d1; /* width of the border, type, color */
-    transition: 0.3s opacity;
+  color: #556B2F; /* needed to override the default link color */
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block*/
+  background-color: #d7d1d1;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border-bottom: 2px solid #d7d1d1; /* width of the border, type, color */
+  transition: 0.3s opacity;
   }
 
 .button:hover {
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
-    text-decoration: underline;
-    color: blue; 
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: underline;
+  color: blue; 
   }
 
 .button:active {
-    color: #556B2F; /* needed to override the default link color */
-    background-color: #d7d1d1;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 12px;
-    border-radius: 4px;
-    border-bottom: 2px solid #d7d1d1; /* width of the border, type, color */
-    transition: 0.3s opacity;
+  color: #556B2F; /* needed to override the default link color */
+  background-color: #d7d1d1;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 12px;
+  border-radius: 4px;
+  border-bottom: 2px solid #d7d1d1; /* width of the border, type, color */
+  transition: 0.3s opacity;
 }
 
 
 .button.contact {
-    background-color: transparent;
-    color: #ff7f50;
-    border: 2px solid #ff7f50;
+  background-color: transparent;
+  color: #ff7f50; 
+  border: 2px solid #ff7f50;
   }
 
   .button.contact:hover {
-    background-color: #556B2F;
-    color: #ffffff;
+  background-color: #556B2F;
+  color: #ffffff;
   }
 
   .button.contact:active {
-    background-color: #ff7f50;
-    color: #556B2F;
+  background-color: #ff7f50;
+  color: #556B2F;
   }

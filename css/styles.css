@@ -38,61 +38,133 @@ Secondary Color (Olive Green): #556B2F;
 
 h1{
     font-family: 'Bricolage Grotesque', sans-serif;
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 3.75em;
+    font-weight: 700;
     line-height: 1.4;
-    font-style: bold;
-}
-
-span{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-size: 20px;
-    font-style: normal; 
 }
 
 h2{
     font-family: 'Manrope', sans-serif;
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 500;
     color:#556B2F;
 }
 
 h3{
     font-family: 'Manrope', sans-serif;
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 500;
     color:black;
-
 }
 
+span{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
 body {
-    background-color: #FFEFD5;
+    background-color: #FFF5EE;
+    font-family: 'Manrope', sans-serif;
 }
 
 p{
     font-family: 'Manrope', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.4;
     font-style: normal;
 }
 
 header{
     font-family: 'Manrope', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.4;
-    font-style: normal;
+    font-weight: 300;
 }
 
 ul{
     font-family: 'Manrope', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.4;
-    font-style: normal;
+    font-weight: 400;
 }
 
 footer{
     font-family: 'Manrope', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.4;
-    font-style: normal;
+    font-weight: 400;
 }
 
+img {
+    width: 100%;
+  }
+
+
+  /* HYPERLINKS */
+
+a {
+    color: black;
+    text-decoration: none; /* No underlining */
+  }
+a:visited { /* visited link */
+    color: purple;
+  }
+a:hover {
+    color: #556B2F;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+a:active { /* selected link */
+    color: blue;
+  }
+a:focus {
+  color: blue;
+  text-decoration: underline;
+}
+
+  /* BUTTONS */
+
+.button {
+    color: #556B2F; /* needed to override the default link color */
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block*/
+    background-color: #d7d1d1;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-bottom: 2px solid #d7d1d1; /* width of the border, type, color */
+    transition: 0.3s opacity;
+  }
+
+.button:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: underline;
+    color: blue; 
+  }
+
+.button:active {
+    color: #556B2F; /* needed to override the default link color */
+    background-color: #d7d1d1;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px;
+    border-radius: 4px;
+    border-bottom: 2px solid #d7d1d1; /* width of the border, type, color */
+    transition: 0.3s opacity;
+}
+
+
+.button.contact {
+    background-color: transparent;
+    color: #ff7f50;
+    border: 2px solid #ff7f50;
+  }
+
+  .button.contact:hover {
+    background-color: #556B2F;
+    color: #ffffff;
+  }
+
+  .button.contact:active {
+    background-color: #ff7f50;
+    color: #556B2F;
+  }

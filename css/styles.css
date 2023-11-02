@@ -100,6 +100,17 @@ header {
     font-weight: 300;
 }
 
+header {
+  background-color: #b4b8a6;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  margin: 0 auto;
+  border-bottom: 2.5px solid #4a4a4a;
+
+}
+
 ul {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;

@@ -19,7 +19,7 @@
 <main>
 <body>
 <header>
-<div>
+    <div class="container">
     <picture>
         <source srcset="files/logo.png" media="(max-width:767px)">
         <img src="files/logo.png" alt="logo" class="logo">
@@ -28,20 +28,28 @@
         <ul>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </div>
 </header>
-<div>
+<div class="container">
+<div class="row">
 <h2>About Me</h2>
-<img src="img/portrait.jpg" alt="Headshot" class="portrait-image">
+<selector><img src="img/portrait.jpg" alt="Headshot" class="portrait-image"></selector>
 </div>
-<div><p>I’ve been working as a creative professional for the past 10 years as a film & photo producer within the advertising sector, creating award winning digital, print and OOH ads for my clients and managing creative teams. I have lived in California, New York, Berlin and Barcelona - picking up inspiration along the way.</p>
+<div>
+<p>I’ve been working as a creative professional for the past 10 years as a film & photo producer within the advertising sector, creating award winning digital, print and OOH ads for my clients and managing creative teams. I have lived in California, New York, Berlin and Barcelona - picking up inspiration along the way.</p>
 <p>In 2023, I decided to switch gears and complete a UX / UI Design bootcamp with CareerFoundry, making me well-versed in product development, wire framing and prototyping.</p>
 <p>From my advertising photography education and past work experiences, I understand the impact of a simple design which has helped me become a successful designer.</p>
 </div>
 <div><div>
+<br><br><br><br><br><br><br>
+
+<div class="row">
+    <div class="column"></div>
+    <div class="column"></div>
+</div>
     <h3>Skills</h3>
     <ul>
         <li>UX Design</li>
@@ -53,7 +61,8 @@
         <li>Client Relations</li>    
     </ul>
 </div>
-<div><div>
+<div class="row">
+    <div class="column"></div>
     <h3>Tools</h3>
     <ul>
         <li>Figma</li>
@@ -64,9 +73,47 @@
         <li>Airtable</li>
         <li>Microsoft Office</li> 
     </ul>
-</div>
-<br>
-<a href="files/cv.pdf" class="button contact">Download my CV</a>
+</div></div>
 </body>
+<br>
+<footer id="contact">   
+    <div class="container">
+    <div class="center">
+    <div>
+    <br>
+    <hr>
+    <h2>Get In Touch</h2>  
+    <p>Do you like my work and want to discuss the possibility of working together?    
+    <br><br>
+    Connect with me on the following platforms:
+    </p>
+    <div>
+        <div class="center">
+        <ul class="social-icons">
+            <ul class="social-icons">
+                <li>
+                    <a href="mailto:allisonlang707@gmail.com" target="_blank">
+                        <img src="files/email.png" alt="linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/allisonlang/" target="_blank">
+                        <img src="files/linkedin.png" alt="linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/allisonlang" target="_blank">
+                        <img src="files/behance.png" alt="behance">
+                </a>
+            </li>
+            <br><br> 
+         <a href="files/cv.pdf" class="button contact">Download my CV</a>  
+        </ul>
+         <br>
+    <p>© Allison Lang 2023</p>
+    </div>
+   
+    </div>
+</footer>
 </main>
 </html>

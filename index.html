@@ -20,19 +20,21 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="container">
                 <img src="files/logo.png" alt="logo" class="logo">
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div class="intro">
+        <div class="hero">
+        <div class ="container">
+        <br><br>
         <h1>Hello, my name is Allison Lang!</h1>
             <p>
                 <span>
@@ -41,39 +43,51 @@
             </p>
             <br>
         </div>
-        <h2>My Work</h2>
+
+        <div id="work">
+            <div class="container">
+              <h2>My Work</h2>
+                 <div class="row">
+
         <!-- EcoTask Project starts here -->
-       <div>
+        <div id="work">
+            <div class="row">
             <h3>EcoTask</h3>
             <div>
-                    <img src="img/ecotask/ecotaskcover.jpg" alt="ecotask" class="project-image">
+                <selector><img src="img/ecotask/ecotaskcover.jpg" alt="ecotask" class="project-image"></selector>
                 <p>A native mobile app solving ways users can offset their CO2e emissions. The app highlights a smart
                     to-do
                     list that is generated based on the user’s daily activities guiding them toward carbon neutrality.
                 </p>
                 <a href="ecotask.html" class="button">See Project</a>
+                <br><br><br>
             </div>
        </div>
        <!-- EcoTask Project ends  cmd + /--> 
-        <br>
+    
         <!-- ClimbToTopo Project starts here -->
-        <div>
+            <div id="work">
+                    <div class="row">
+
             <h3>ClimbToTopo</h3>
-                <img src="img/climbtotopo/climbtotopocover.jpg" alt="climbtotopo" class="project-image">
+            <div>
+                <selector><img src="img/climbtotopo/climbtotopocover.jpg" alt="climbtotopo" class="project-image"></selector>
+            </div>
             <br>
             <div>
                 <p>ClimbToTopo is a mobile app that acts as a digital climbing guidebook and connects climbers around the
-                world to
-                share their knowledge on the best crags.</p>
+                world to share their knowledge on the best crags.</p>
             </div>
             <br>
             <a href="climbtotopo.html" class="button">See Project</a>
             <br>
         </div>
         <!-- ClimbToTopo Project ends-->
-        <br>
+       
+        <div id="work">
+                <div class="row">
         <h3>Gemma</h3>
-            <img src="img/gemma/gemmacover.jpg" alt="gemma" class="project-image">
+            <selector><img src="img/gemma/gemmacover.jpg" alt="gemma" class="project-image"></selector>
         <br>
         <div>
             <p>Gemma is an easy-to-navigate online shopping platform consisting of curated second-hand vintage clothing
@@ -84,21 +98,23 @@
         <br>
         <a href="gemma.html" class="button">See Project</a>
     </main>
+ 
     <footer id="contact">
-        <br>
-            <hr>
-            <h2>Get in Touch</h2>
-            <p>Do you like my work and want to discuss the possibility of working together?
-            </p>
-            <a href="mailto:allisonlang707@gmail.com" class="button contact">Send me an email</a>
-            <br><br>
-            Or connect with me on the following platforms:</a>
-            </p>
-            <div>
-                <ul class="social-icons">
+    <div class="container">
+    <div class="center">
+        <div>
+            <h2>Get In Touch</h2>
+            <p>Do you like my work and want to discuss the possibility of working together?</p>
+               <p>Connect with me on the following platforms:</p> 
+            <ul class="social-icons">
+                    <li>
+                        <a href="mailto:allisonlang707@gmail.com" target="_blank">
+                            <img src="files/email.png" alt="linkedin">
+                        </a>
+                    </li>
                     <li>
                         <a href="https://www.linkedin.com/in/allisonlang/" target="_blank">
-                            <img src="files/linkedin.svg" alt="linkedin">
+                            <img src="files/linkedin.png" alt="linkedin">
                         </a>
                     </li>
                     <li>
@@ -111,6 +127,7 @@
             <br>
             <br>
             <p>© Allison Lang 2023</p>
+        </div>
     </footer>
 </body>
 

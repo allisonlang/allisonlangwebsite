@@ -30,9 +30,6 @@ Font (Olive Green): #556B2F;
     max-width: 250px;
 }
 
-.project-image {
-    max-width: 50%;
-}
 .project-navigation-buttons {
     list-style: none;
     text-align: center;
@@ -117,7 +114,8 @@ header {
   margin: 0 auto;
   border-bottom: 2.5px solid #4a4a4a;
   text-align: center;
-  position: relative;
+  position: fixed;
+  z-index: 10000;
   /*box shadow*/
     width: [object Object]px; 
     height: [object Object]px; 
@@ -169,6 +167,10 @@ nav > ul > li > a:active {
   text-decoration: underline;
 }
 
+main, footer {
+  position: relative;
+  top: 140px;
+}
 
 footer {
     font-family: 'Manrope', sans-serif;
@@ -277,6 +279,7 @@ a:focus {
   .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
     display: flex;
+    flex-direction: column;
   }
   
   .column {
@@ -305,4 +308,26 @@ a:focus {
     text-align: center;
   }
 
- 
+  .project-image-container {
+    min-width: 400px;
+    text-align: center;
+  }
+
+  .project-image-container > img {
+    max-width: 90%;
+  }
+
+  @media screen and (min-width: 480px) {
+    main, footer {
+      top: 200px;
+    }
+    .row {
+      flex-direction: row;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    main, footer {
+      top: 300px;
+    }
+  }

@@ -27,7 +27,9 @@ Font (Olive Green): #556B2F;
 }
 
 .portrait-image {
-    width: 40%;
+    width: 50%;
+    max-width: 300px;
+    max-height: fit-content;
     float: left;
 }
 
@@ -39,8 +41,6 @@ Font (Olive Green): #556B2F;
 .project-navigation-buttons li {
     display: inline-block;
 }
-
-/*this is a class right? div.intro overrode h1*/
 
 div.intro {
   font-family: 'Bricolage Grotesque', sans-serif;
@@ -108,7 +108,7 @@ header {
     line-height: 1.4;
     font-weight: 300;
   background-color: #b4b8a6;
-  padding-top: 15px;
+  padding-top: 20px;
   padding-right: 5px;
   padding-bottom: 0px;
   padding-left: 5px;
@@ -146,6 +146,7 @@ nav > ul {
 nav > ul > li {
   display: inline-block;
   padding: 20px;
+  flex: space-between;
 }
 
 nav > ul > li > a:visited {
@@ -191,40 +192,24 @@ footer {
     margin: 0 10px 10px 0;
   }
 
-  /* HYPERLINKS */
-
-a {
-    color: black;
-    text-decoration: none; /* No underlining */
-  }
-a:visited { /* visited link */
-    color: purple;
-  }
-a:hover {
-    color: #556B2F;
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
-a:active { /* selected link */
-    color: blue;
-  }
-a:focus {
-  color: blue;
-  text-decoration: underline;
-}
 
   /* BUTTONS */
 
 .button {
-  background-color: transparent;
+  background-color: #c1c6b7;
   border: 2px solid #556B2F;
-  color: #556B2F; /*needed to override the default link color */
+  color: #d7d1d1; /*needed to override the default link color */
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block*/
   font-size: 18px;
   font-weight: 400;
-  padding: 10px 20px;
+  text-decoration: none;
+  padding: 12px;
   border-radius: 4px;
-  transition: 0.3s opacity;
+  transition: 0.2s opacity;
   margin: 0px;
+  }
+  .button:hover {
+    opacity: 0.8;
   }
 
 .button:hover {
@@ -234,7 +219,7 @@ a:focus {
   }
 
 .button:active {
-  color: #556B2F; /* needed to override the default link color */
+  color: #d7d1d1;/* needed to override the default link color */
   background-color: #d7d1d1;
   font-size: 18px;
   font-weight: 400;
@@ -244,6 +229,26 @@ a:focus {
   transition: 0.3s opacity;
 }
 
+    /* HYPERLINKS */
+
+    a {
+      color: black;
+      text-decoration: none; /* No underlining */
+    }
+    a:visited { /* visited link */
+      color: blue;
+    }
+    a:hover {
+      color: #556B2F;
+      text-decoration: underline; /* Underlining when hovering over a link */
+    }
+    a:active { /* selected link */
+      color: yellow;
+    }
+    a:focus {
+    color: whitesmoke;
+    text-decoration: underline;
+    }
 
 .button.contact {
   background-color: transparent;
@@ -265,11 +270,15 @@ a:focus {
   }
 
 
+
   /* Layout styling */
 
 
   .container {
     padding: 0 80px;
+    max-width: 1400px;
+    margin-left:auto;
+    margin-right: auto;
   }
   
   .row {
@@ -297,6 +306,7 @@ a:focus {
 
   #about .row { 
     padding-bottom: 65px; border-bottom: 1px solid #a2a0a0; 
+    text-align: left;
   }
 
   #hero h1 {
@@ -308,26 +318,144 @@ a:focus {
   }
 
   .project-image-container {
-    min-width: 400px;
+    min-width: 300px;
     text-align: center;
   }
 
   .project-image-container > img {
-    max-width: 80%;
+    max-width: 40%;
     float: left;
   }
 
+  /* ====Small devices (480x and larger) ====*/
   @media screen and (min-width: 480px) {
     main, footer {
       top: 200px;
     }
     .row {
-      flex-direction: row;
+      flex-direction: column;
+      ;
     }
+    font {
+      size: 12px;
+    }
+    .button{
+      width:100px;
+      padding: 3%;
+    }
+    .container {
+      padding: 10px;
+      max-width: 1400px;
+      margin-left:auto;
+      margin-right: auto;
+    }
+    .button {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 14px;
+      text-align: center;
+    }
+  
+    nav > ul {
+      list-style-type: none;
+      padding: 0;
+      text-transform: uppercase;
+      display:inline-block;
+      width: 100%;
+      margin: 10px;
   }
+}
+ 
 
-  @media screen and (min-width: 1000px) {
-    main, footer {
-      top: 300px;
-    }
+/* ===Medium devices (640px and larger)====== */
+@media only screen and (min-width: 640px) {
+  main, footer {
+    top: 90px;
   }
+  header {
+    text-align: unset;
+    padding: 20px 0 13 px; 
+  }
+  nav {
+    width: auto;
+    float: right; 
+    margin-top: 4px;
+  }
+  font {
+    size: 16px;
+  }
+  .hero {
+  text-align: left;
+}
+  .col-md-6 {
+  width: 50%;
+}
+
+#about-page h3 
+{ margin-top: 0;
+}
+}
+
+/* ==Large devices (1024px or larger)===== */
+@media only screen and (min-width: 1024px) {
+  main, footer { 
+    top: 300px;
+  }
+  .col-md-6 {
+    width: 100%;
+  }
+  header {
+      font-size: 2.3em;
+}
+}
+
+
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  /* from {fill: #edc655;}
+  to {fill: #f76414;} */
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 28s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 30s cloud-move-reverse infinite alternate linear;
+}

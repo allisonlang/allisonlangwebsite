@@ -289,6 +289,7 @@ footer {
   
   .column {
     float: left;
+    flex: 50%;
     width: 30%;
   }
   

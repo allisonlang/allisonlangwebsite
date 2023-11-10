@@ -379,6 +379,10 @@ footer {
   animation: 30s cloud-move-reverse infinite alternate linear;
 }
 
+.skills-tools {
+  padding-right: 50px;
+}
+
   /* ====Small devices (480x and larger) ====*/
   @media screen and (min-width: 480px) {
     main, footer {

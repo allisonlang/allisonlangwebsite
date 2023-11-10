@@ -117,6 +117,7 @@ header {
   text-align: center;
   position: fixed;
   z-index: 10000;
+  width: 100%;
   /*box shadow*/
     /* width: [object Object]px; 
     height: [object Object]px; 

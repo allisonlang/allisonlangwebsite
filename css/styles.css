@@ -203,7 +203,7 @@ footer {
 .button {
   background-color: #c1c6b7;
   border: 2px solid #556B2F;
-  color: #d7d1d1; /*needed to override the default link color */
+  color: black; /*needed to override the default link color */
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block*/
   font-size: 18px;
   font-weight: 400;
@@ -224,7 +224,7 @@ footer {
   }
 
 .button:active {
-  color: #d7d1d1;/* needed to override the default link color */
+  color: blue;/* needed to override the default link color */
   background-color: #d7d1d1;
   font-size: 18px;
   font-weight: 400;
@@ -380,7 +380,7 @@ footer {
 }
 
 .skills-tools {
-  padding-right: 50px;
+  padding-right: 80px;
 }
 
   /* ====Small devices (480x and larger) ====*/

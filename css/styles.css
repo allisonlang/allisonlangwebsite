@@ -384,7 +384,7 @@ footer {
 }
 
   /* ====Small devices (480x and larger) ====*/
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 375px) {
     main, footer {
       top: 200px;
     }

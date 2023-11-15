@@ -107,7 +107,7 @@ header {
     line-height: 1.4;
     font-weight: 300;
   background-color: #b4b8a6;
-  padding-top: 5px;
+  padding-top: 0px;
   padding-right: 5px;
   padding-bottom: 0px;
   padding-left: 5px;
@@ -127,10 +127,18 @@ header {
   font-size: 25px;
 }
 
+.navtoggle.responsive li  {
+  display: block;
+}
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+  padding: 0 0 10px;
+}
 
 
 ul {
@@ -276,9 +284,7 @@ footer {
   color: #556B2F;
   }
 
-  .navtoggle li:not(:last-child) {
-    display: none;
-  }
+  
 
   /* Layout styling */
 
@@ -387,7 +393,7 @@ footer {
   padding-right: 80px;
 }
 
-  /* ==== Small devices (480x and larger) ====*/
+  /* ==== Small devices (375x and larger) ====*/
   @media screen and (min-width: 375px) {
     main, footer {
       top: 200px;
@@ -434,7 +440,7 @@ footer {
     display: none;
   }
   main, footer {
-    top: 90px;
+    top: 150px;
   }
   header {
     text-align: unset;

@@ -107,25 +107,31 @@ header {
     line-height: 1.4;
     font-weight: 300;
   background-color: #b4b8a6;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-right: 5px;
   padding-bottom: 0px;
   padding-left: 5px;
   margin: 0 auto;
   border-bottom: 2px solid #4a4a4a;
-  text-align: center;
+  /* text-align: center; */
   position: fixed;
   z-index: 10000;
   width: 100%;
-  /*box shadow*/
-    /* width: [object Object]px; 
-    height: [object Object]px; 
-    background: #B4B8A6; 
-    border: solid #BDBDBD 1px; 
-    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.3)  ; 
-    -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.3)  ; 
-    -moz-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.3)  ;  */
 }
+
+.navtoggle li .icon {
+  position: absolute;
+  padding-right: 0;
+  right: 15px;
+  top: 2px;
+  font-size: 25px;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+
 
 ul {
     font-family: 'Manrope', sans-serif;
@@ -138,16 +144,12 @@ ul {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   text-transform: uppercase;
   display:inline-block;
   width: 100%;
 }
 
-nav > ul > li {
-  display: inline-block;
-  padding: 20px;
-  flex: space-between;
-}
 
 nav > ul > li > a:visited {
   text-transform: uppercase;
@@ -274,7 +276,9 @@ footer {
   color: #556B2F;
   }
 
-
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
 
   /* Layout styling */
 
@@ -383,12 +387,14 @@ footer {
   padding-right: 80px;
 }
 
-  /* ====Small devices (480x and larger) ====*/
+  /* ==== Small devices (480x and larger) ====*/
   @media screen and (min-width: 375px) {
     main, footer {
       top: 200px;
     }
-
+    header {
+      padding-top: 50px;
+    }
     font {
       size: 12px;
     }
@@ -410,18 +416,23 @@ footer {
     }
   
     nav > ul {
-      list-style-type: none;
-      padding: 0;
       text-transform: uppercase;
       display:inline-block;
       width: 100%;
       margin: 10px;
-  }
+      word-spacing: 35px;
+    }
 }
  
 
-/* ===Medium devices (640px and larger)====== */
-@media only screen and (min-width: 640px) {
+/* ===Medium devices (641px and larger)====== */
+@media only screen and (min-width: 641px) {
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
   main, footer {
     top: 90px;
   }
@@ -457,16 +468,29 @@ footer {
   }
   .logo {
     max-width: 15%;
-}
+
+  nav > ul > li {
+    display: inline-block;
+    min-width: 641px;
+    padding: 20px;
+    flex: space-between;
+    }
+  nav > ul {
+    margin: 1em 0;
+  }
 }
 
 /* ==Large devices (1024px or larger)===== */
 @media only screen and (min-width: 1024px) {
   main, footer { 
-    top: 300px;
+    top: 200px;
   }
-
   header {
-      font-size: 2.3em;
+    font-size: 2.3em;
+    padding-top: 50px;
   }
-}
+  nav > ul {
+    list-style-type: none;
+    padding: 5px;
+  }
+}}

@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
+<!-- FontAwesome -->
+<script src="https://kit.fontawesome.com/0b034ba2f3.js" crossorigin="anonymous"></script>
+
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,13 +23,15 @@
 </head>
 <body>
     <header>
-        <div class="container">
+            <div class="container">
+              <div class="navtoggle" id="myNavtoggle">
                 <img src="files/logo.png" alt="logo" class="logo">
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
         </div>

@@ -23,7 +23,7 @@ Font (Olive Green): #556B2F;
 
 
 .logo {
-    max-width: 20%;
+    max-width: 150px;
 }
 
 .portrait-image {
@@ -455,6 +455,9 @@ footer {
   #about-page h3 { 
     margin-top: 0;
   }
+  .logo {
+    max-width: 15%;
+}
 }
 
 /* ==Large devices (1024px or larger)===== */

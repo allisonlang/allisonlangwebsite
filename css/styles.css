@@ -127,10 +127,6 @@ header {
   font-size: 25px;
 }
 
-.navtoggle.responsive li  {
-  display: block;
-}
-
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
@@ -140,6 +136,11 @@ header {
   padding: 0 0 10px;
 }
 
+.navtoggle.responsive li  {
+  display: block;
+  text-align: right;
+  padding-right: 15px;
+}
 
 ul {
     font-family: 'Manrope', sans-serif;

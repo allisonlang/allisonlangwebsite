@@ -209,6 +209,12 @@ footer {
     font-size: 12px;
   }
 
+#contact-page .copyright {
+  position: fixed;
+  bottom: 0;
+  left: 47%;
+}
+
   /* BUTTONS */
 
 .button {

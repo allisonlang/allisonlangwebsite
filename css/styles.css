@@ -210,9 +210,9 @@ footer {
   }
 
 #contact-page .copyright {
-  position: fixed;
-  bottom: 0;
-  left: 47%;
+  position: relative;
+  /* text-align: center;
+  bottom: 0; */
 }
 
   /* BUTTONS */

@@ -13,12 +13,12 @@ Font (Olive Green): #556B2F;
 
 .social-icons li {
     display: inline-block;
-    width: 32px;
+    width: 40px;
     padding: 10px;
 }
 
 .social-icons img {
-    max-width: 32px;
+    max-width: 40px;
 }
 
 
@@ -163,7 +163,7 @@ nav > ul {
 nav > ul > li > a:visited {
   text-transform: uppercase;
   font-weight: 700;
-  color: purple;
+  color: black;
 }
 
 nav > ul > li > a:hover {
@@ -176,7 +176,7 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
   text-transform: uppercase;
   font-weight: 700;
-  color: blue;
+  color: black;
   text-decoration: underline;
 }
 
@@ -237,11 +237,11 @@ footer {
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: underline;
-  color: blue; 
+  color: black; 
   }
 
 .button:active {
-  color: blue;/* needed to override the default link color */
+  color: black;/* needed to override the default link color */
   background-color: #d7d1d1;
   font-size: 18px;
   font-weight: 400;
@@ -258,7 +258,7 @@ footer {
       text-decoration: none; /* No underlining */
     }
     a:visited { /* visited link */
-      color: blue;
+      color: black;
     }
     a:hover {
       color: #556B2F;

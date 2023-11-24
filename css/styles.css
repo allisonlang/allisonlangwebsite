@@ -56,22 +56,22 @@ h1 {
 }
 
 h2 {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
     font-size: 30px;
     font-weight: 500;
-    color:#556B2F;
+    color:black;
 }
 
 h3 {
     font-family: 'Manrope', sans-serif;
     font-size: 24px;
     font-weight: 500;
-    color:black;
+    color:#556B2F;
 }
 
 .project-title {
   font-family: 'Manrope', sans-serif;
-  font-size: 32px;
+  font-size: px;
   font-weight: 600;
   color:black;
 }

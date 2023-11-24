@@ -109,7 +109,7 @@ header {
   background-color: #b4b8a6;
   padding-top: 0px;
   padding-right: 5px;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
   padding-left: 5px;
   margin: 0 auto;
   border-bottom: 2px solid #4a4a4a;
@@ -145,7 +145,7 @@ header {
 ul {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 0;
     font-weight: 400;
     padding:0; 
 }
@@ -352,7 +352,7 @@ footer {
   box-sizing: border-box;
 }
 
-.berlin-illustration {
+/* .berlin-illustration {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -361,12 +361,12 @@ footer {
 @keyframes color-change {
   /* from {fill: #edc655;}
   to {fill: #f76414;} */
-  0% {fill: #edc655;}
+  /* 0% {fill: #edc655;}
   50% {fill: #fcffad;}
   100% {fill: #f76414;}
-}
+} */
 
-.sun {
+/* .sun {
   animation-duration: 4s;
   animation-name: color-change;
   animation-iteration-count: infinite;
@@ -382,8 +382,8 @@ footer {
 .cloud-front {
   animation-duration: 28s;
   animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-iteration-count: infinite; */
+  /* animation-direction: alternate;
   animation-timing-function: linear;
 }
 
@@ -398,20 +398,20 @@ footer {
 
 .skills-tools {
   padding-right: 80px;
-}
+} */ */
 
   /* ==== Small devices (375x and larger) ====*/
-  @media screen and (min-width: 375px) {
+  @media only screen and (min-width: 375px) { 
     main, footer {
-      top: 200px;
+      top: 150px;
     }
     header {
-      padding-top: 50px;
+      padding-top: 40px;
     }
     font {
       size: 12px;
     }
-    .button{
+    .button {
       width:100px;
       padding: 3%;
     }
@@ -427,7 +427,6 @@ footer {
       padding: 14px;
       text-align: center;
     }
-  
     nav > ul {
       text-transform: uppercase;
       display:inline-block;
@@ -435,7 +434,8 @@ footer {
       margin: 10px;
       word-spacing: 35px;
     }
-}
+  }
+  
  
 
 /* ===Medium devices (641px and larger)====== */
@@ -452,6 +452,7 @@ footer {
   header {
     text-align: unset;
     padding: 20px 0 13 px; 
+    }
   }
   nav {
     width: auto;
@@ -463,7 +464,7 @@ footer {
   }
   .hero {
   text-align: left;
-}
+  }
   .col-md-6 {
     width: 50%;
   }
@@ -480,7 +481,7 @@ footer {
     margin-top: 0;
   }
   .logo {
-    max-width: 15%;
+    max-width: 18%;
 
   nav > ul > li {
     display: inline-block;
@@ -500,10 +501,10 @@ footer {
   }
   header {
     font-size: 2.3em;
-    padding-top: 50px;
+    padding-top: 30px;
   }
   nav > ul {
     list-style-type: none;
-    padding: 5px;
+    padding: 2px;
   }
-}}
+}

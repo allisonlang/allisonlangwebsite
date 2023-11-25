@@ -468,6 +468,8 @@ a:focus {
 
   nav > ul {
     margin: 1em 0;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -485,6 +487,8 @@ a:focus {
 
   nav > ul {
     list-style-type: none;
-    padding: 2px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }

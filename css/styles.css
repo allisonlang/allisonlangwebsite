@@ -5,7 +5,6 @@ Header (taupe): #b4b8a6
 Font (Olive Green): #556B2F;
 */
 
-
 .social-icons {
   list-style: none;
   position: relative;
@@ -20,7 +19,6 @@ Font (Olive Green): #556B2F;
 .social-icons img {
   max-width: 40px;
 }
-
 
 .logo {
   max-width: 150px;
@@ -42,10 +40,10 @@ Font (Olive Green): #556B2F;
 }
 
 div.intro {
-font-family: 'Bricolage Grotesque', sans-serif;
-font-size: 2em;
-font-weight: 600;
-line-height: 1;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1;
 }
 
 h1 {
@@ -59,7 +57,7 @@ h2 {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-size: 30px;
   font-weight: 500;
-  color:black;
+  color: black;
 }
 
 h3 {
@@ -70,10 +68,10 @@ h3 {
 }
 
 .project-title {
-font-family: 'Manrope', sans-serif;
-font-size: px;
-font-weight: 600;
-color:black;
+  font-family: 'Manrope', sans-serif;
+  font-size: px;
+  font-weight: 600;
+  color: black;
 }
 
 span {
@@ -81,16 +79,17 @@ span {
   font-size: 20px;
   font-weight: 300;
 }
+
 body {
-  background-color: #FFF5EE;
+  background-color: #fff5ee;
   font-family: 'Manrope', sans-serif;
 }
 
 .hero {
-background-color: #FFF5EE;
-padding: 20px 0;
-display: inline-block;
-width: 100%;
+  background-color: #fff5ee;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
 
 p {
@@ -100,46 +99,46 @@ p {
   font-style: normal;
 }
 
-
 header {
-font-family: 'Manrope', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   line-height: 1.4;
   font-weight: 300;
-background-color: #b4b8a6;
-padding-top: 0px;
-padding-right: 5px;
-padding-bottom: 20px;
-padding-left: 5px;
-margin: 0 auto;
-border-bottom: 2px solid #4a4a4a;
-/* text-align: center; */
-position: fixed;
-z-index: 10000;
-width: 100%;
+  background-color: #b4b8a6;
+  padding: 0;
+  padding-right: 5px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  margin: 0 auto;
+  border-bottom: 2px solid #4a4a4a;
+  /* text-align: center; */
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
 }
 
 .navtoggle li .icon {
-position: absolute;
-padding-right: 0;
-right: 15px;
-top: 2px;
-font-size: 25px;
+  position: absolute;
+  padding-right: 0;
+  right: 15px;
+  top: 2px;
+  font-size: 25px;
 }
 
-.navtoggle, .navtoggle.responsive {
-position: relative;
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
 }
 
 .navtoggle li:not(:last-child) {
-display: none;
-padding: 0 0 10px;
+  display: none;
+  padding: 0 0 10px;
 }
 
-.navtoggle.responsive li  {
-display: block;
-text-align: right;
-padding-right: 15px;
+.navtoggle.responsive li {
+  display: block;
+  text-align: right;
+  padding-right: 15px;
 }
 
 ul {
@@ -147,48 +146,48 @@ ul {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  padding:0; 
+  padding: 0;
 }
 
 nav > ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
-text-transform: uppercase;
-display:inline-block;
-width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
 }
 
-
 nav > ul > li > a:visited {
-text-transform: uppercase;
-font-weight: 700;
-color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
 }
 
 nav > ul > li > a:hover {
-text-transform: uppercase;
-font-weight: 700;
-color: black;
-text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+  text-decoration: underline;
 }
 
 nav > ul > li > a:active {
-text-transform: uppercase;
-font-weight: 700;
-color: black;
-text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+  text-decoration: underline;
 }
 
-main, footer {
-position: relative;
-top: 160px;
+main,
+footer {
+  position: relative;
+  top: 160px;
 }
 
 footer {
   font-family: 'Manrope', sans-serif;
   font-size: 16px;
-  line-height: 1.4;     
+  line-height: 1.4;
   font-weight: 400;
 }
 
@@ -210,97 +209,99 @@ img {
 }
 
 #contact-page .copyright {
-position: relative;
-/* text-align: center;
-bottom: 0; */
+  position: relative;
+  /* text-align: center;
+  bottom: 0; */
 }
 
 /* BUTTONS */
 
 .button {
-background-color: #c1c6b7;
-border: 2px solid #556B2F;
-color: black; /*needed to override the default link color */
-display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block*/
-font-size: 18px;
-font-weight: 400;
-text-decoration: none;
-padding: 12px;
-border-radius: 4px;
-transition: 0.2s opacity;
-margin: 0px;
+  background-color: #c1c6b7;
+  border: 2px solid #556b2f;
+  color: black; /* needed to override the default link color */
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 4px;
+  transition: 0.2s opacity;
+  margin: 0;
 }
+
 .button:hover {
   opacity: 0.8;
 }
 
 .button:hover {
-opacity: 0.8; /* Reduces the opacity of the button to 80% */
-text-decoration: underline;
-color: black; 
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: underline;
+  color: black;
 }
 
 .button:active {
-color: black;/* needed to override the default link color */
-background-color: #d7d1d1;
-font-size: 18px;
-font-weight: 400;
-padding: 12px;
-border-radius: 4px;
-border-bottom: 2px solid #d7d1d1; /* width of the border, type, color */
-transition: 0.3s opacity;
+  color: black;/* needed to override the default link color */
+  background-color: #d7d1d1;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 12px;
+  border-radius: 4px;
+  border-bottom: 2px solid #d7d1d1; /* width of the border, type, color */
+  transition: 0.3s opacity;
 }
 
-  /* HYPERLINKS */
+/* HYPERLINKS */
 
-  a {
-    color: black;
-    text-decoration: none; /* No underlining */
-  }
-  a:visited { /* visited link */
-    color: black;
-  }
-  a:hover {
-    color: black;
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
-  a:active { /* selected link */
-    color: yellow;
-  }
-  a:focus {
+a {
+  color: black;
+  text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:active { /* selected link */
+  color: yellow;
+}
+
+a:focus {
   color: whitesmoke;
   text-decoration: underline;
-  }
+}
 
 .button.contact {
-background-color: transparent;
-color: #ff7f50; 
-border: 2px solid #ff7f50;
-width: 150px;
-max-height: fit-content;
-text-align: center;
-margin: 8px;
+  background-color: transparent;
+  color: #ff7f50;
+  border: 2px solid #ff7f50;
+  width: 150px;
+  max-height: fit-content;
+  text-align: center;
+  margin: 8px;
 }
 
 .button.contact:hover {
-background-color: #ff7f50;
-color: #ffffff;
+  background-color: #ff7f50;
+  color: #fff;
 }
 
 .button.contact:active {
-background-color: #ff7f50;
-color: black;
+  background-color: #ff7f50;
+  color: black;
 }
 
-
-
 /* Layout styling */
-
 
 .container {
   padding: 0 80px;
   max-width: 1400px;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -315,19 +316,20 @@ color: black;
 }
 
 /* Clear floats after the columns */
-.row:after {
+.row::after {
   content: "";
   display: table;
   clear: both;
 }
 
-
-#work .row { 
-  padding-bottom: 65px; border-bottom: 1px solid #a2a0a0; 
+#work.row {
+  padding-bottom: 65px;
+  border-bottom: 1px solid #a2a0a0;
 }
 
 .about-container > .row {
-  padding-bottom: 65px; border-bottom: 1px solid #a2a0a0; 
+  padding-bottom: 65px;
+  border-bottom: 1px solid #a2a0a0;
   text-align: left;
 }
 
@@ -345,124 +347,144 @@ color: black;
 }
 
 [class*="col-"] {
-float: left;
-padding: 10px;
-box-sizing: border-box;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-.col-md-4, .col-md-8 {
-width: 100%; /* For mobile view  */
+.col-md-4,
+.col-md-8 {
+  width: 100%; /* For mobile view  */
 }
 
 .skills-tools {
-padding-right: 80px;
-} 
+  padding-right: 80px;
+}
 
-/* ==== Small devices (375x and larger) ====*/
-@media only screen and (min-width: 375px) { 
-  main, footer {
+/* ==== Small devices (375x and larger) ==== */
+
+@media only screen and (min-width: 375px) {
+  main,
+  footer {
     top: 150px;
   }
+
   header {
     padding-top: 40px;
   }
+
   font {
     size: 12px;
   }
+
   .button {
-    width:100px;
+    width: 100px;
     padding: 3%;
   }
+
   .container {
     padding: 10px;
     max-width: 1200px;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
   }
+
   .button {
     font-size: 14px;
     font-weight: 500;
     padding: 14px;
     text-align: center;
   }
+
   nav > ul {
     text-transform: uppercase;
-    display:inline-block;
+    display: inline-block;
     width: 100%;
     margin: 10px;
     word-spacing: 35px;
   }
 }
 
-
-
 /* ===Medium devices (641px and larger)====== */
 @media only screen and (min-width: 641px) {
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
-main, footer {
-  top: 150px;
-}
-header {
-  text-align: unset;
-  padding: 20px 0 13 px; 
-}
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-nav {
-  width: auto;
-  float: right; 
-  margin-top: 4px;
-}
-font {
-  size: 16px; 
-}
-.hero {
-text-align: left;
-}
-.col-md-6 {
-  width: 50%;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-.col-md-4 {
-  width: 33.33%;
-}
+  main,
+  footer {
+    top: 150px;
+  }
 
-.col-md-8 {
-  width: 66.66%;
-}
+  header {
+    text-align: unset;
+    padding: 20px 0 13 px;
+  }
 
-#about-page h3 { 
-  margin-top: 0;
-}
-.logo {
-  display: inline-block;
-  padding-top: 15px;
-}
-nav > ul > li {
-  display: inline-block;
-  padding: 20px;
-  flex: space-between;
-}
-nav > ul {
-  margin: 1em 0;
-}
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  font {
+    size: 16px;
+  }
+
+  .hero {
+    text-align: left;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  .logo {
+    display: inline-block;
+    padding-top: 15px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    padding: 20px;
+    flex: space-between;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
 }
 
 /* ==Large devices (1024px or larger)===== */
 @media only screen and (min-width: 1024px) {
-main, footer { 
-  top: 200px;
-}
-header {
-  font-size: 2.3em;
-  padding-top: 30px;
-}
-nav > ul {
-  list-style-type: none;
-  padding: 2px;
-}
+  main,
+  footer {
+    top: 200px;
+  }
+
+  header {
+    font-size: 2.3em;
+    padding-top: 30px;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    padding: 2px;
+  }
 }

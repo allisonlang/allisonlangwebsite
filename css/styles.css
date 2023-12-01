@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary Color (Beige): #FFEFD5;
+Primary Color (Beige): #f3efe3;
 Header (taupe): #b4b8a6
 Font (Olive Green): #556B2F;
 Secondardy Buttons: #ff4805
@@ -82,12 +82,12 @@ span {
 }
 
 body {
-  background-color: #fff5ee;
+  background-color: #f3efe3;
   font-family: 'Manrope', sans-serif;
 }
 
 .hero {
-  background-color: #fff5ee;
+  background-color: #f3efe3;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
